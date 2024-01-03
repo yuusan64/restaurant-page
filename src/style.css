@@ -12,28 +12,29 @@ body{
     background-image: url(/assets/pizza.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 nav{
+    font-family: 'Roboto', sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 8vh; 
     background: #310d02e7;
-    height: 8vh;
     color: #e7e7e7;
+
 }
 ul{
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
     display: flex;
     list-style: none;
-    justify-content: center;
-    gap: 6em;
-    margin: 0;
-    padding-top: 3vh;
-    font-size: 1.4em;
+    gap: 6em; 
+    padding: 0; 
+    margin: 0; 
    
 }
 
-#homeContent, #menuContent, #contactContent{
-  
-}
 
 .info{
     color: wheat;
@@ -200,3 +201,103 @@ input, textarea{
     color: #001d3d;
     line-height: 1.6;
 }
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+        /* Show the hamburger menu in mobile view */
+        
+        nav ul {
+            width: 100%;
+            padding: 0; /* Reset any padding */
+        }
+    
+        nav ul li {
+            text-align: center;
+            padding: 10px 0;
+        }
+    .pizza-item, #contactContent > div, #contactForm {
+        max-width: 100%;
+        padding: 15px;
+    }
+  
+    .pizza-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .dotted-line {
+      display: none; /* Hide on smaller screens */
+    }
+  
+    #homeContent{
+        margin: auto;
+    width: 50%;
+    padding: 20%;
+    }
+     #menuContent {
+      margin: 1em;
+      padding: 0;
+    }
+
+    #contactContent{
+        margin: 2em;
+        padding: 0;
+
+    }
+  
+    #homeContent button, #contactForm button {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .menuTitle {
+      font-size: 3em;
+    }
+    
+    #menuContent p {
+      font-size: 1em;
+    }
+  
+    .pizza-price {
+      font-size: 1em;
+    }
+  
+    #homeContent p {
+      font-size: 3em;
+      padding: 1em;
+    }
+  
+    #homeContent h3 {
+      font-size: 1em;
+      padding: 0.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for mobile devices */
+    
+    nav ul {
+    gap: 1.5em;
+    justify-content: space-around;
+    /* padding: 0em 0em; */
+    font-size: 1em;
+    }
+  
+    .menuTitle {
+        display: none;
+    }
+    
+    #homeContent p{
+        font-size: 2em;
+        padding: 0;
+    }
+    #homeContent h3 {
+        font-size: 0.8em;
+        padding: 0.5em;
+      }
+    #menuContent p {
+      font-size: 0.8em;
+    }
+  }

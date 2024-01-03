@@ -5,11 +5,14 @@ import createHomeTab, {homeDesign} from './home';
 
 const content = document.getElementById("content");
 
+
 export function createNavBar() {
+  
+  
 
   let navBar = document.createElement('nav');
   let ul = document.createElement('ul');
-
+  
   let homeTab = createHomeTab();
   let menuTab = createMenuTab(); 
   let contactTab = createContactTab(); 

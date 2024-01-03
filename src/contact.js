@@ -50,7 +50,7 @@ export function contactDesign(){
       <h3>Contact Information</h3>
       <p>123 Pizza Street, Flavor Town</p>
       <p>Phone: (123) 456-7890</p>
-      <p>Email: contact@pizzeria.com</p>
+      <p>Email: contact@sliceofitaly.com</p>
     `;
     contact.appendChild(form);
     contact.appendChild(info);
