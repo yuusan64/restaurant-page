@@ -4,3 +4,7 @@ export default function createContactTab() {
     contactTab.id = "contactTab";
     return contactTab;
   }
+
+export function contactDesign(){
+  
+}  
