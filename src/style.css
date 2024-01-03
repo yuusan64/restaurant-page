@@ -35,6 +35,10 @@ ul{
   
 }
 
+.info{
+    color: wheat;
+}
+
 #homeTab, #menuTab, #contactTab{
     cursor: pointer;
 }
@@ -114,7 +118,7 @@ p, h3, h1, h4{
     font-size: 1.5em;
 }
 
-button{
+#homeContent button{
     margin: 1em 1em 2em 10em;
     /* width: 50%; */
     padding: 0.6em;
@@ -127,7 +131,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+#homeContent button:hover, #contactForm button:hover{
     background: #4b1707b7;
     box-shadow: 1px 1px 10px 4px #888888;
 }
@@ -136,5 +140,63 @@ button:hover{
     text-shadow: -1px -1px 7px #fffafa;
 }
 #contactContent{
+    background-color: rgba(0,0,0,0.5);
+    /* margin: 3em 2em 3em 4em; */
+    margin: auto;
+    margin: 6em 20em;
+    padding: 5em;
+}
+input, textarea{
+    background-color: #0000005c;
+    color: whitesmoke;
+}
 
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f445;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contactForm input[type='text'],
+  #contactForm input[type='email'],
+  #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #contactForm button {
+    width: 65%;
+    padding: 10px;
+    background-color: #310d02e7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5.5em;
+}
+
+
+#contactContent > div {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f4f4f445;
+    border-radius: 8px;
+    text-align: center;
+  }
+  #contactContent h3 {
+    
+    color: #fefefe96;
+    margin-bottom: 10px;
+}
+
+#contactContent p {
+    color: #001d3d;
+    line-height: 1.6;
 }
